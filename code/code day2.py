@@ -13,7 +13,7 @@ def parse(line):
                 colordict[color] = int(score)
     return colordict, int(gameid)
 
-with open("input.txt", "r") as file: data = [i for i in file]
+with open("tests/input day2.txt", "r") as file: data = [i for i in file]
 countvalidgameid = 0
 countpowers = 0
 

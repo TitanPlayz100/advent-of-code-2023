@@ -32,7 +32,7 @@ def is_part(number):
     return any(map(is_symbol, flatten_list(map(adjecents8, xys))))
 
 ## PART 1
-input_lines = open("input day3.txt", "r").readlines()
+input_lines = open("tests/input day3.txt", "r").readlines()
 diagram = { (x,y): c for y, line in enumerate(input_lines) for x, c in enumerate(line.strip()) }
 numbers = flatten_list(parse_numbers(line, y) for y, line in enumerate(input_lines))
 parts = [number for number in numbers if is_part(number)]
@@ -40,7 +40,7 @@ parts = [number for number in numbers if is_part(number)]
 print(f'1: {sum(val for val, _ in parts)}')
 
 
-## PART 2
+## PART 2 # could not do
 stars = [xy for xy, c in diagram.items() if c == '*']
 adj_parts_vals = [ [val for val, part_xys in parts if set(part_xys) & set(adjecents8(star))] for star in stars ]
 

@@ -1,4 +1,4 @@
-with open("input day1.txt", "r") as file:
+with open("tests/input day1.txt", "r") as file:
     data = [i for i in file]
 nums = {'one':1, 'two':2, 'three':3, 'four': 4, 'five':5, 'six':6, "seven":7, 'eight':8, 'nine':9, 'zero':0}
 

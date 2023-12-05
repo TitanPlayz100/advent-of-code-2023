@@ -1,4 +1,4 @@
-with open("input day4.txt", "r") as file:data = [i for i in file]
+with open("tests/input day4.txt", "r") as file:data = [i for i in file]
 
 def part1():
     total = 0
